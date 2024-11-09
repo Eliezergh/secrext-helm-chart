@@ -37,5 +37,5 @@ helm install secrext ./secrext
      --set externalSecret.target.name="$SECRET_NAME"
     ```
 ## Credits
-* @retributter for the original idea and inspiration
-* @Eliezergh for the helm chart development
+* [@retributter](https://github.com/retributter) for the original idea and inspiration
+* [@Eliezergh](https://github.com/eliezergh) for the helm chart development
