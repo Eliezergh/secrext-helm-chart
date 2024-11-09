@@ -1,0 +1,6 @@
+apiVersion: v2
+appVersion: 0.1.0
+description: Secrext is a custom helm chart to handle Kubernetes External Secret Operator which allow you to renew AWS Elastic Container Registry (ECR) Authorization token automatically
+name: secrext
+type: application
+version: 0.1.0
