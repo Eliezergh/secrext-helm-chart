@@ -1,0 +1,19 @@
+# -- Values for ExternalSecret object
+externalSecret:
+  # -- Refresh interval for the ExternalSecret object
+  refreshInterval: 1h
+  # -- Values for target object
+  target:
+    # -- Name of the target object; this will be used later in your deployments as imagePullSecrets
+    name: ""
+# -- Values for ECRAuthorizationToken object
+ECRAuthorizationToken:
+  # -- AWS Region where the ECR is located
+  region: ""
+
+# -- Values for secret with AWS credentials
+secret:
+  # -- AWS Access Key ID
+  aws_access_key_id: ""
+  # -- AWS Secret Access Key
+  aws_secret_access_key: ""

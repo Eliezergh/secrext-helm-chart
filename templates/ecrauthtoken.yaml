@@ -1,0 +1,19 @@
+apiVersion: generators.external-secrets.io/v1alpha1
+kind: ECRAuthorizationToken
+metadata:
+  name: {{ printf "%s-ecr-auth" (include "secrext.name" .) | quote }}
+spec:
+  region: {{ .Values.ECRAuthorizationToken.region | quote}}
+
+{{- if .Values.ECRAuthorizationToken.role }}
+  role: {{ .Values.ECRAuthorizationToken.role | quote }}
+{{- end }}
+
+  auth:
+    secretRef:
+      accessKeyIDSecretRef:
+        name: {{ include "secrext.name" . | quote }}
+        key: "aws_access_key_id"
+      secretAccessKeySecretRef:
+        name: {{ include "secrext.name" . | quote }}
+        key: "aws_secret_access_key"
