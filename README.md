@@ -36,6 +36,8 @@ helm install secrext ./secrext
      --set ECRAuthorizationToken.region=$AWS_DEFAULT_REGION \
      --set externalSecret.target.name="$SECRET_NAME"
     ```
+## Workflow diagram
+![Secrext Diagram](Secrext.png)
 ## Credits
 * [@retributter](https://github.com/retributter) for the original idea, inspiration and individual implementation design
 * [@Eliezergh](https://github.com/eliezergh) for the helm chart development
